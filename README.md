@@ -19,7 +19,7 @@ This is a template for building cross-platform desktop applications using React,
 1.  **Clone the Repository:**
 
     ```bash
-    git clone [repository URL]
+    git clone https://github.com/brando5393/react-desktop-app-template.git
     cd react-desktop-app-template
     ```
 
