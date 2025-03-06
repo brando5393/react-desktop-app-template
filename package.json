@@ -4,11 +4,18 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently \"vite\" \"electron electron/main.js\"",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "electron:build": "vite build && electron-builder"
   },
+  "keywords": [
+    "react",
+    "electron",
+    "vite",
+    "template"
+  ],
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -19,6 +26,8 @@
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
     "concurrently": "^9.1.2",
+    "electron": "^35.0.0",
+    "electron-builder": "^25.1.8",
     "eslint": "^9.21.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",

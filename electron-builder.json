@@ -1,0 +1,22 @@
+"build": {
+  "appId": "com.example.reactelectron",
+  "directories": {
+    "buildResources": "build",
+    "output": "dist"
+  },
+  "files": [
+    "dist/**/*",
+    "electron/**/*"
+  ],
+  "mac": {
+    "target": "dmg"
+  },
+  "win": {
+    "target": "nsis"
+  },
+  "linux": {
+    "target": "deb"
+  },
+  "afterSign": "electron-builder-notarize",
+  "publish": null
+}
